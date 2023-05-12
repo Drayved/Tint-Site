@@ -11,11 +11,16 @@ body{
 }
 
 .header-navbar{
-    @apply flex justify-around text-white font-bold drop-shadow-md
+    @apply flex justify-around text-white font-bold drop-shadow-md py-4 bg-black
 }
 
+.header-nav-container {
+    transition: all 0.3s ease-in-out;
+    /* rest of your styles */
+  }
+
 li{
-    @apply drop-shadow-md
+    @apply drop-shadow-md 
 }
 
 .header-nav-logo{
@@ -38,11 +43,24 @@ li{
     @apply hidden
 }
 
+.nav-fixed{
+    @apply fixed w-screen top-0 left-0 right-0 z-50
+    shadow-md transition-all duration-300 ease-in-out;
+    
+}
+
+.nav-fixed li{
+    @apply flex 
+}
+
+.nav-fixed .header-nav-logo{
+    @apply hidden
+}
 
 
 @media (max-width: 770px) {
     .header-navbar {
-      display: none;
+        display: none;
     }
 
     .header-nav-logo{
@@ -50,7 +68,7 @@ li{
     }
 
     .show{
-        @apply flex flex-col justify-center items-center fixed z-50 bg-[#050505] w-screen h-screen bg-opacity-95
+        @apply flex flex-col justify-center items-center fixed z-50 bg-[#050505] w-[50%] h-screen bg-opacity-95
     }
 
     .show li{
@@ -62,7 +80,7 @@ li{
     }
 
     .small-logo-container{
-        @apply flex justify-center
+        @apply flex justify-center bg-gray-950 items-center py-7
     }
 
     .logo-small-screen{
@@ -70,17 +88,31 @@ li{
       }
   
     .header-nav-toggle span {
-      @apply top-7 left-5 rounded-sm bg-gray-100 w-7 relative mb-1.5 h-1 block cursor-pointer
+      @apply rounded-sm bg-gray-100 w-7 mb-1.5 h-0.5 block mt-1 
+    }
+
+    .header-nav-toggle {
+        @apply absolute top-4 left-5 cursor-pointer bg-gray-950 p-2
     }
   
     .header-nav-toggle.show + .header-navbar {
       @apply block
     }
 
+
+
     .header-nav-logo{
         @apply block 
     }
-  }
+
+    .close-nav {
+        @apply text-gray-400 fixed top-6 left-6 text-3xl cursor-pointer z-50
+      }
+
+    .nav-fixed{
+        @apply bg-blue-500 w-0 h-0 py-0
+    }
+}
   
 
 .body-container{
@@ -273,7 +305,7 @@ input{
 /* Footer */
 
 .footer-container{
-    @apply text-center bg-[#1c1c1c] mt-10 py-5
+    @apply text-center bg-gray-950 mt-10 py-5
 }
 
 .footer-phone{

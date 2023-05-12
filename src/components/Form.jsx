@@ -42,7 +42,8 @@ export default function Form(){
 // https://script.google.com/macros/s/AKfycbwQQ5awu4M1Pf8V_DOkaS1eoFaSUR-yXL0KgvcsZXRxBapLm6SwUYKFXuXymGskTXze/exec
     return(
         <div className="form-container">
-            <div id="quote" className="form-titles">
+            <div id="quote"></div>
+            <div  className="form-titles">
                 <h2 className="form-title">COMPANY NAME</h2>
                 <h4 className="form-subtitle">WINDOW TINT & CLEAR BRA</h4>
             </div>
