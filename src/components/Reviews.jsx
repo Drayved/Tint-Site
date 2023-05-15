@@ -19,8 +19,17 @@ export default function Reviews() {
             </div>
           ))}
             <div className="google-link-container">
-            <a href="https://www.google.com/search?q=peach+and+cake+reviews&rlz=1C1CHBD_enUS928US928&oq=peach+and+cake+reviews&aqs=chrome.0.69i59j0i22i30j0i390i650l3j69i60l3.3061j0j4&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x8841c71a6cf0d56f:0x784653a516cff427,1,,,," className="google link">Read more on Google ⇒</a> 
-                <a href="https://www.google.com/search?q=peach+and+cake+reviews&rlz=1C1CHBD_enUS928US928&oq=peach+and+cake+reviews&aqs=chrome.0.69i59j0i22i30j0i390i650l3j69i60l3.3061j0j4&sourceid=chrome&ie=UTF-8#lrd=0x8841c71a6cf0d56f:0x784653a516cff427,3,,,," className="google link">Write a review ⇒</a>    
+                <a 
+                href="https://www.google.com/search?q=peach+and+cake+reviews&rlz=1C1CHBD_enUS928US928&oq=peach+and+cake+reviews&aqs=chrome.0.69i59j0i22i30j0i390i650l3j69i60l3.3061j0j4&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x8841c71a6cf0d56f:0x784653a516cff427,1,,,," 
+                className="google-reviews">
+                    Read more on Google ⇒
+                </a> 
+
+                <a 
+                href="https://www.google.com/search?q=peach+and+cake+reviews&rlz=1C1CHBD_enUS928US928&oq=peach+and+cake+reviews&aqs=chrome.0.69i59j0i22i30j0i390i650l3j69i60l3.3061j0j4&sourceid=chrome&ie=UTF-8#lrd=0x8841c71a6cf0d56f:0x784653a516cff427,3,,,," 
+                className="google-write">
+                    Write a review ⇒
+                </a>    
             </div>  
         </div>
       </div>

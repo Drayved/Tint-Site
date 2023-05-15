@@ -365,7 +365,20 @@ input{
 }
 
 .google-link-container{
-    @apply flex flex-col items-end justify-end font-semibold italic 
+    @apply flex justify-between font-semibold italic 
+}
+
+.google-reviews{
+    @apply flex justify-start
+}
+
+.google-write{
+    @apply flex justify-end 
+}
+
+.google-reviews:hover,
+.google-write:hover{
+    @apply cursor-pointer text-gray-100
 }
 
 @media(max-width: 850px){
