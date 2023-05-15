@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    @apply bg-gray-300 font-serif
+    @apply bg-gray-300 font-serif leading-loose text-gray-500
 }
 
 .header-container{
@@ -11,7 +11,7 @@ body{
 }
 
 .header-navbar{
-    @apply flex justify-around text-white font-bold drop-shadow-md py-4 bg-black
+    @apply flex justify-around text-white font-bold drop-shadow-md py-1  
 }
 
 .header-nav-container {
@@ -44,8 +44,8 @@ li{
 }
 
 .nav-fixed{
-    @apply fixed w-screen top-0 left-0 right-0 z-50
-    shadow-md transition-all duration-300 ease-in-out;
+    @apply fixed w-screen top-0 left-0 right-0 z-50 
+    bg-[#171717] shadow-md transition-all duration-300 ease-in-out;
     
 }
 
@@ -60,7 +60,7 @@ li{
 
 @media (max-width: 770px) {
     .header-navbar {
-        display: none;
+      @apply hidden
     }
 
     .header-nav-logo{
@@ -92,7 +92,7 @@ li{
     }
 
     .header-nav-toggle {
-        @apply absolute top-4 left-5 cursor-pointer bg-gray-950 p-2
+        @apply absolute top-[1.1rem] left-5 cursor-pointer bg-gray-950 p-2
     }
   
     .header-nav-toggle.show + .header-navbar {
@@ -110,48 +110,84 @@ li{
       }
 
     .nav-fixed{
-        @apply bg-blue-500 w-0 h-0 py-0
+    @apply bg-transparent w-0 h-0 py-0
     }
 }
-  
 
-.body-container{
-    @apply flex mt-20
+
+
+/* First Pitch */
+
+.first-pitch-container{
+    @apply flex mt-20 text-gray-500 justify-around max-w-[60%] mx-auto 
 }
-
-.vehicle-img{
-    @apply bg-truck-img h-[150px] bg-center bg-cover my-16
-}
-
-/* Pitch */
 
 .pitch-container{
-    @apply flex flex-col justify-around text-left
+    @apply flex flex-col justify-around text-left w-[60%]
 }
 
 .pitch{
-    @apply text-xl font-bold w-[60%] mx-auto mb-5 
+    @apply text-2xl font-semibold  mx-auto mb-5 text-gray-700 leading-relaxed
 }
 
 .pitch-details{
-    @apply w-[60%] mx-auto
+    @apply  mx-auto leading-loose
 }
 
 .company-info{
-    @apply  flex flex-col justify-between
+    @apply  flex flex-col justify-between mr-6
 }
 
+.phone,
+.email,
+.hours{
+    @apply mb-8
+}
+
+.vehicle-img{
+    @apply bg-truck-img h-64 bg-center bg-cover my-16
+}
+
+@media(max-width: 1000px){
+    .first-pitch-container{
+        @apply flex flex-col w-[100%] max-w-[100%]
+    }
+
+    .pitch{
+        
+    }
+
+    .pitch-details{
+        
+    }
+
+    .pitch-container{
+        @apply px-5 mx-auto w-[100%]
+    }
+
+    .company-info{
+        @apply pl-5 
+    }
+
+    .phone,
+    .email,
+    .hours{
+        @apply mt-16
+    }
+}
+
+/* Second pitch */
 
 .second-pitch-container{
     @apply w-[90%] mx-auto
 }
 
 .second-pitch{
-    @apply text-xl font-semibold mb-4
+    @apply text-2xl font-semibold mb-4 text-gray-700 leading-relaxed
 }
 
 .pic-info-container{
-    @apply w-[90%] mt-10 mx-auto
+    @apply w-[90%] mt-10 mx-auto 
 }
 
 .info-images{
@@ -159,7 +195,7 @@ li{
 }
 
 .list-title{
-    @apply font-semibold mt-8
+    @apply font-semibold mt-8 text-gray-700
 }
 
 ol{
@@ -167,7 +203,7 @@ ol{
 }
 
 .slideshow-container{
-    @apply flex items-center justify-center h-80 mt-20 bg-blue-500 mb-0
+    @apply flex items-center justify-center mt-20 bg-blue-500 mb-0
 }
 
 .slideshow{
@@ -175,7 +211,7 @@ ol{
 }
 
 .current-img{
-    @apply w-full h-[400px] object-cover 
+    @apply w-full h-[100%] object-cover 
 }
 
 .img-film{
@@ -198,14 +234,20 @@ ol{
     @apply scale-125 bg-gray-100 shadow-lg shadow-black
 }
 
+@media(min-width: 850px) {
+    .current-img{
+        @apply h-[80%]
+    }    
+}
+
 /* FORM */
 
 .form-container{
-    @apply bg-garage bg-cover text-white h-[1000px] flex flex-col items-center 
+    @apply bg-garage bg-cover text-white h-[1080px] flex flex-col items-center  my-auto 
 }
 
 .form-titles{
-    @apply text-center mb-20 mt-36
+    @apply text-center mb-20 mt-32
 }
 
 .form-question{
@@ -272,11 +314,11 @@ input{
 /* MIDDLE INFO */
 
 .mid-page-info{
-    @apply mx-auto w-[75%] my-20
+    @apply mx-auto w-[75%] my-20 
 }
 
 .mid-titles{
-    @apply text-center mb-5
+    @apply text-center mb-5 text-gray-700
 }
 
 .mid-phone{
@@ -290,22 +332,60 @@ input{
 /* Reviews */
 
 .reviews-container {
-    @apply mt-10 bg-[#1c1c1c] w-[80%] mx-auto
+    @apply  w-[80%] mx-auto max-w-[1000px] pb-4
     
 }
 
 .reviews-inner{
-    @apply w-[80%] mx-auto pt-10 pb-0.5
+    @apply w-[90%] mx-auto pt-10 pb-0.5 text-gray-900
   }
   
 .reviews-title{
-    @apply text-3xl text-center flex justify-center pb-20 px-16
+    @apply text-3xl text-center flex justify-center px-16 text-gray-700
+}
+
+.reviews{
+    @apply border-b rounded-sm border-gray-400 py-10 text-gray-500 flex 
+}
+
+.review-right-col{
+    @apply ml-16
+}
+
+.review-name{
+    @apply font-bold
+}
+
+.review-stars{
+    @apply mt-3
+}
+
+.review-desc{
+    @apply my-2
+}
+
+.google-link-container{
+    @apply flex flex-col items-end justify-end font-semibold italic 
+}
+
+@media(max-width: 850px){
+    .reviews{
+        @apply flex flex-col
+    }
+
+    .review-stars{
+        @apply text-center mb-4 mt-0
+    }
+
+    .review-right-col{
+        @apply m-0
+    }
 }
 
 /* Footer */
 
 .footer-container{
-    @apply text-center bg-gray-950 mt-10 py-5
+    @apply text-center bg-[#171717] mt-10 py-5
 }
 
 .footer-phone{
@@ -324,8 +404,20 @@ input{
     @apply mb-4
 }
 
+/* Media */
+@media(min-width:1000px){
+    .pic-info-container{
+        @apply flex gap-5
+    }
 
+    .services{
+        @apply max-w-[1400px] mx-auto
+    }
 
+    .info-images{
+        @apply h-[50%] w-[100%]
+    }
+}
 
 
 

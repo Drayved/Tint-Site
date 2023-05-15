@@ -57,7 +57,7 @@ export default function Header() {
       >
         <ul className={`header-navbar ${showMenu ? "show" : "hidden"}`}>
           <li className={isSmallScreen ? "" : "hidden"}>
-            <a className="cursor-pointer" onClick={handleLogoClick}>HOME</a>
+            <a className="cur" onClick={handleLogoClick}>HOME</a>
           </li>
           <li>
             <a href="#services">SERVIES</a>
@@ -87,7 +87,7 @@ export default function Header() {
           </div>
         ) : (
           <span onClick={handleMenuClick} className="close-nav">
-            X
+            ✖
           </span>
         )}
       </div>

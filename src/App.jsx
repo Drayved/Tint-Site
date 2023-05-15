@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "./Components/Header"
+import Header from "./components/Header"
 import SlideShow from "./components/SlideShow"
 import Form from "./components/Form";
 import Footer from "./components/Footer";

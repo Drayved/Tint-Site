@@ -3,7 +3,7 @@ import React from "react"
 export default function FirstPitch(){
     
     return(
-        <div className="body-container">
+        <div className="first-pitch-container">
             <div className="pitch-container">
                 <h3 className="pitch">Welcome to (company name) Window Tint & Clear Bra. We are professionals providing
                     quality installion of window tint, clear bra, and security film.
@@ -16,19 +16,19 @@ export default function FirstPitch(){
             </div>
             <div className="company-info">
                 <div className="phone">
-                    <h2 className="text-lg">PHONE</h2>
-                    <p className="text-sm">555-555-5555</p>
+                    <h2 className="text-lg mb-3">PHONE</h2>
+                    <p className="text-md">555-555-5555</p>
                 </div>
                 <div className="email">
-                    <h2 className="text-lg">EMAIL</h2>
-                    <p className="text-sm">youremail@email.com</p>
+                    <h2 className="text-lg mb-3">EMAIL</h2>
+                    <p className="text-md">youremail@email.com</p>
                 </div>
                 <div className="hours">
-                    <h2 className="text-lg">HOURS</h2>
-                    <p className="text-sm">7 days a week</p>
+                    <h2 className="text-lg mb-3">HOURS</h2>
+                    <p className="text-md w-36">7 days a week - by appointment only</p>
                 </div>
             </div>
-            <div className="vehicle-img"></div>
+            
         </div>
     )
 }
