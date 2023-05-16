@@ -229,7 +229,13 @@ input{
 /* MIDDLE INFO */
 
 .mid-page-info{
-    @apply mx-auto w-[75%] my-20 
+    @apply mx-auto w-[70%] my-20 
+}
+
+@media(min-width:1500px ){
+    .mid-page-info{
+        @apply w-[45%]
+    }
 }
 
 .mid-titles{
