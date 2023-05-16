@@ -9,10 +9,10 @@ import FirstPitch from "./components/FirstPitch";
 import Reviews from "./components/Reviews";
 
 const images = [
-    '../public/images/urus.jpg',
-    '../public/images/first-pic.jpg',
-    '../public/images/second-pic.jpg',
-    '../public/images/third-pic.jpg',
+    '/images/urus.jpg',
+    '/images/first-pic.jpg',
+    '/images/second-pic.jpg',
+    '/images/third-pic.jpg',
   ];
 
 export default function App() {
