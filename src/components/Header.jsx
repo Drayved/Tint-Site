@@ -55,7 +55,15 @@ export default function Header() {
           isNavFixed ? "nav-fixed" : ""
         }`}
       >
+        
         <ul className={`header-navbar ${showMenu ? "show" : "hidden"}`}>
+        {!isSmallScreen ? (
+            <h3 className="header-nav-logo" onClick={handleLogoClick}>
+              PEACH & CAKE<span className="text-sm">Window Tinting & Auto Services</span>
+            </h3>
+          ) : (
+            ""
+          )}
           <li className={isSmallScreen ? "" : "hidden"}>
             <a className="cur" onClick={handleLogoClick}>HOME</a>
           </li>
@@ -65,13 +73,7 @@ export default function Header() {
           <li>
             <a href="#quote">QUOTE</a>
           </li>
-          {!isSmallScreen ? (
-            <li className="header-nav-logo" onClick={handleLogoClick}>
-              YOUR LOGO HERE<span>YOUR NAME HERE</span>
-            </li>
-          ) : (
-            ""
-          )}
+          
           <li>
             <a href="#contact">CONTACT</a>
           </li>
@@ -94,7 +96,7 @@ export default function Header() {
 
       <div className="small-logo-container">
         <h3 className="logo-small-screen" onClick={handleLogoClick}>
-          YOUR LOGO HERE<span>YOUR NAME HERE</span>
+          PEACH & CAKE<span className="text-sm">Window Tinting & Auto Services</span>
         </h3>
       </div>
 

@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('../public/images/header-img.jpg')",
+        'orang-lambo': "url('../public/images/header-img.jpg')",
         'truck-img': "url('../public/images/truck.jpg')",
-        'garage': "url('../public/images/garage.jpg')"
+        'garage': "url('../public/images/garage.jpg')",
+        'peach-header': "url('../public/images/peach-header.jpg')"
       },
     },
   },

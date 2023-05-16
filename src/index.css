@@ -7,16 +7,16 @@ body{
 }
 
 .header-container{
-    @apply bg-hero bg-cover h-[500px] bg-center
+    @apply bg-peach-header bg-cover h-[800px] bg-center
 }
 
 .header-navbar{
-    @apply flex justify-around text-white font-bold drop-shadow-md py-1  
+    @apply flex gap-16 justify-center text-white font-bold drop-shadow-md pt-16 bg-gray-950
 }
 
 .header-nav-container {
     transition: all 0.3s ease-in-out;
-    /* rest of your styles */
+    
   }
 
 li{
@@ -24,19 +24,22 @@ li{
 }
 
 .header-nav-logo{
-    @apply flex flex-col cursor-pointer 
+    @apply flex flex-col text-2xl absolute top-3 cursor-pointer text-center text-orange-600;
+    text-shadow: 0px 0px 3px rgb(182, 173, 163);
 }
 
 .header-titles{
-    @apply text-white flex flex-col justify-center text-center mt-36 drop-shadow-md
+    @apply text-white flex flex-col text-center mt-52 drop-shadow-md gap-5
 }
 
 .header-title{
-    @apply text-3xl font-bold 
+    @apply text-3xl font-bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .header-subtitle{
-    @apply text-2xl font-bold
+    @apply text-2xl font-bold text-orange-500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .logo-small-screen{
@@ -44,8 +47,9 @@ li{
 }
 
 .nav-fixed{
-    @apply fixed w-screen top-0 left-0 right-0 z-50 
+    @apply fixed w-screen top-0 left-0 right-0 z-50 mt-[-65px] py-1
     bg-[#171717] shadow-md transition-all duration-300 ease-in-out;
+    
     
 }
 
@@ -382,10 +386,6 @@ input{
       @apply hidden
     }
 
-    .header-nav-logo{
-        @apply hidden
-    }
-
     .show{
         @apply flex flex-col justify-center items-center fixed z-50 bg-[#050505] w-[50%] h-screen bg-opacity-95
     }
@@ -395,7 +395,7 @@ input{
     }
 
     .show li:hover{
-        @apply text-gray-200 cursor-pointer
+        @apply text-gray-200 cursor-pointer;
     }
 
     .small-logo-container{
@@ -403,15 +403,16 @@ input{
     }
 
     .logo-small-screen{
-        @apply flex flex-col cursor-pointer text-gray-100 font-bold text-sm;
+        @apply flex flex-col text-center cursor-pointer text-orange-600 font-bold text-2xl;
+        text-shadow: 0px 0px 3px rgb(182, 173, 163);
       }
   
     .header-nav-toggle span {
-      @apply rounded-sm bg-gray-100 w-7 mb-1.5 h-0.5 block mt-1 
+      @apply rounded-sm bg-gray-400 w-7 mb-1.5 h-0.5 block mt-1 
     }
 
     .header-nav-toggle {
-        @apply absolute top-[0.9rem] left-5 cursor-pointer bg-gray-950 p-2
+        @apply absolute top-[1.3rem] left-5 cursor-pointer bg-gray-950 p-2
     }
   
     .header-nav-toggle.show + .header-navbar {
@@ -423,11 +424,20 @@ input{
     }
 
     .close-nav {
-        @apply text-gray-400 fixed top-5 left-7 text-3xl cursor-pointer z-50
+        @apply text-gray-400 fixed top-7 left-8 text-3xl cursor-pointer z-50
       }
 
     .nav-fixed{
     @apply bg-transparent w-0 h-0 py-0
+    }
+
+    .close-nav:hover{
+        @apply text-gray-200
+    }
+
+    .header-nav-toggle:hover span{
+        @apply bg-gray-100;
+        text-shadow: 0px 0px 3px rgb(182, 173, 163);
     }
 }
 
