@@ -24,7 +24,7 @@ export default function Form(){
     
       const handleSubmit = async (e) => {
         e.preventDefault();
-        
+        alert("Form submitted. Someone will reach out to you with a quote. Thank you!")
         const url = "https://script.google.com/macros/s/AKfycbwxLKGbIiJr_-hw-qFxbtCl-njt5Pu8hrioTixHbmR3VWSCenjw2K3tsFZL66FSE7zn/exec";
         const data = new FormData(e.target);
         
@@ -37,6 +37,7 @@ export default function Form(){
           console.error(error);
         }
       };
+      
 
     
 // https://script.google.com/macros/s/AKfycbwQQ5awu4M1Pf8V_DOkaS1eoFaSUR-yXL0KgvcsZXRxBapLm6SwUYKFXuXymGskTXze/exec

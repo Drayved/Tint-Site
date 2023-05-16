@@ -419,7 +419,7 @@ input{
     }
 
     .header-nav-toggle {
-        @apply absolute top-[1rem] left-3 cursor-pointer bg-gray-950 p-2
+        @apply absolute top-[1.3rem] left-4 cursor-pointer bg-gray-950 p-1.5
     }
 
     .header-nav-container{
@@ -459,7 +459,11 @@ input{
     }
 
     .header-nav-toggle span {
-        @apply rounded-sm bg-gray-400 w-6 mb-1.5  block 
+        @apply rounded-sm bg-gray-400 w-4 mb-1 block 
+      }
+
+      .header-nav-toggle{
+        @apply absolute left-1 top-[0.9rem]
       }
 
     .details-input{
