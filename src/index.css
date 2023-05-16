@@ -245,7 +245,7 @@ ol{
 /* FORM */
 
 .form-container{
-    @apply bg-garage bg-cover text-white h-[1080px] flex flex-col items-center
+    @apply bg-garage bg-cover text-white h-[1080px] flex flex-col items-center 
 }
 
 .form-titles{
@@ -253,7 +253,7 @@ ol{
 }
 
 .form-question{
-    @apply mb-[-0.5rem]
+    @apply mb-[-0.5rem] 
 }
 
 .star{
@@ -261,7 +261,7 @@ ol{
 }
 
 .form{
-    @apply flex flex-col gap-5
+    @apply flex flex-col gap-5 max-w-[100%]
 }
 
 input{
@@ -277,7 +277,7 @@ input{
 }
 
 .names-container{
-    @apply flex flex-row gap-3
+    @apply flex flex-row gap-3 
 }
 
 .names,
@@ -311,6 +311,12 @@ input{
 
 .form-btn{
     @apply rounded-3xl w-32 p-2 bg-gray-100 text-gray-500
+}
+
+
+
+.form-info{
+    @apply px-3
 }
 
 /* MIDDLE INFO */

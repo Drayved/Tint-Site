@@ -47,7 +47,7 @@ export default function Form(){
                 <h2 className="form-title">COMPANY NAME</h2>
                 <h4 className="form-subtitle">WINDOW TINT & CLEAR BRA</h4>
             </div>
-            <div>
+            <div className="form-info">
                 <form  onSubmit={handleSubmit} className="form">
                     <p className="form-question">Which Services are you interest in? <span className="star">*</span></p>
                     <div className="form-bubbles-container">
@@ -88,11 +88,11 @@ export default function Form(){
                     <p className="input-labels">Name <span className="star">*</span></p>
                     <div className="names-container">
                         <label htmlFor="" className="names">
-                            <input type="text" name="First Name" required/>
+                            <input type="text" name="First Name" className="names-input" required/>
                             First Name
                         </label>
                         <label htmlFor="" className="names"> 
-                            <input type="text" name="Last Name" required/>
+                            <input type="text" name="Last Name" className="names-input" required/>
                             Last Name
                         </label>
                     </div>
@@ -102,6 +102,7 @@ export default function Form(){
                         type="hidden"
                         name="Phone Number"
                         value={phoneNumber}
+                        className="phone-input"
                     />
 
                     <div className="phone-container">
