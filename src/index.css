@@ -314,9 +314,18 @@ input{
 }
 
 .form-info{
-    @apply px-3 w-[90%]
+    @apply px-3 
 }
 
+@media(max-width: 420px){
+    .names-container{
+        @apply flex-col flex
+    }
+
+    .form-container{
+        @apply h-[1190px]
+    }
+}
 
 /* MIDDLE INFO */
 
