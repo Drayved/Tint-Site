@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    @apply bg-gray-300 font-serif leading-loose text-gray-500 w-screen
+    @apply bg-gray-300 font-serif leading-loose text-gray-500 w-[100%]
 }
 
 .header-container{
@@ -245,7 +245,7 @@ ol{
 /* FORM */
 
 .form-container{
-    @apply bg-garage bg-cover text-white h-[1080px] flex flex-col items-center  my-auto 
+    @apply bg-garage bg-cover text-white h-[1080px] flex flex-col items-center
 }
 
 .form-titles{
