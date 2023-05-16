@@ -48,7 +48,7 @@ li{
 
 .nav-fixed{
     @apply fixed w-screen top-0 left-0 right-0 z-50 mt-[-65px] py-1
-    bg-[#171717] shadow-md transition-all duration-300 ease-in-out;
+    bg-[#171717] shadow-md;
     
     
 }
@@ -391,7 +391,7 @@ input{
     }
 
     .show li{
-        @apply mb-5 text-3xl text-gray-400
+        @apply mb-5 text-2xl text-gray-400
     }
 
     .show li:hover{
@@ -414,9 +414,13 @@ input{
     .header-nav-toggle {
         @apply absolute top-[1.3rem] left-5 cursor-pointer bg-gray-950 p-2
     }
-  
-    .header-nav-toggle.show + .header-navbar {
-      @apply block
+
+    .header-nav-container{
+        @apply bg-transparent border-none shadow-none
+    }
+
+    .nav-fixed{
+        @apply mt-0
     }
 
     .header-nav-logo{
@@ -427,9 +431,6 @@ input{
         @apply text-gray-400 fixed top-7 left-8 text-3xl cursor-pointer z-50
       }
 
-    .nav-fixed{
-    @apply bg-transparent w-0 h-0 py-0
-    }
 
     .close-nav:hover{
         @apply text-gray-200

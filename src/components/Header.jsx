@@ -3,7 +3,6 @@ import React, { useState, useEffect, useRef } from "react";
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 770);
-  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [isNavFixed, setIsNavFixed] = useState(false);
 
   const headerRef = useRef(null);
