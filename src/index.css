@@ -313,11 +313,10 @@ input{
     @apply rounded-3xl w-32 p-2 bg-gray-100 text-gray-500
 }
 
-
-
 .form-info{
-    @apply px-3
+    @apply px-3 w-[90%]
 }
+
 
 /* MIDDLE INFO */
 
