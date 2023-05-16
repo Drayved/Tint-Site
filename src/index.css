@@ -211,7 +211,8 @@ input{
 }
 
 .details-input{
-    @apply pb-[4rem] pl-1 pt-1 w-[100%]
+    @apply pb-[4rem] pl-1 pt-1 w-[100%] flex flex-wrap
+
 }
 
 .input-labels{
@@ -460,5 +461,9 @@ input{
     .header-nav-toggle span {
         @apply rounded-sm bg-gray-400 w-6 mb-1.5  block 
       }
+
+    .details-input{
+        @apply text-sm
+    }
 }
 
