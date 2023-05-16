@@ -57,65 +57,6 @@ li{
     @apply hidden
 }
 
-
-@media (max-width: 770px) {
-    .header-navbar {
-      @apply hidden
-    }
-
-    .header-nav-logo{
-        @apply hidden
-    }
-
-    .show{
-        @apply flex flex-col justify-center items-center fixed z-50 bg-[#050505] w-[50%] h-screen bg-opacity-95
-    }
-
-    .show li{
-        @apply mb-5 text-3xl text-gray-400
-    }
-
-    .show li:hover{
-        @apply text-gray-200 cursor-pointer
-    }
-
-    .small-logo-container{
-        @apply flex justify-center bg-gray-950 items-center py-4 
-    }
-
-    .logo-small-screen{
-        @apply flex flex-col cursor-pointer text-gray-100 font-bold text-sm;
-      }
-  
-    .header-nav-toggle span {
-      @apply rounded-sm bg-gray-100 w-7 mb-1.5 h-0.5 block mt-1 
-    }
-
-    .header-nav-toggle {
-        @apply absolute top-[0.9rem] left-5 cursor-pointer bg-gray-950 p-2
-    }
-  
-    .header-nav-toggle.show + .header-navbar {
-      @apply block
-    }
-
-
-
-    .header-nav-logo{
-        @apply block 
-    }
-
-    .close-nav {
-        @apply text-gray-400 fixed top-5 left-7 text-3xl cursor-pointer z-50
-      }
-
-    .nav-fixed{
-    @apply bg-transparent w-0 h-0 py-0
-    }
-}
-
-
-
 /* First Pitch */
 
 .first-pitch-container{
@@ -146,36 +87,6 @@ li{
 
 .vehicle-img{
     @apply bg-truck-img h-64 bg-center bg-cover my-16
-}
-
-@media(max-width: 850px){
-    .first-pitch-container{
-        @apply flex flex-col w-[100%] max-w-[100%] px-10
-    }
-
-    .pitch-container{
-        @apply mx-auto w-[100%]
-    }
-
-    .company-info{
-        
-    }
-
-    .phone,
-    .email,
-    .hours{
-        @apply mt-5 
-    }
-
-    .hours{
-        @apply mb-[-1.1rem]
-    }
-}
-
-@media(min-width:1480px){
-    .first-pitch-container{
-        @apply max-w-[50%]
-    }
 }
 
 /* Second pitch */
@@ -234,12 +145,6 @@ ol{
 
 .bubble.active{
     @apply scale-125 bg-gray-100 shadow-lg shadow-black
-}
-
-@media(min-width: 850px) {
-    .current-img{
-        @apply h-[80%]
-    }    
 }
 
 /* FORM */
@@ -317,16 +222,6 @@ input{
     @apply px-3 
 }
 
-@media(max-width: 420px){
-    .names-container{
-        @apply flex-col flex
-    }
-
-    .form-container{
-        @apply h-[1190px]
-    }
-}
-
 /* MIDDLE INFO */
 
 .mid-page-info{
@@ -397,19 +292,7 @@ input{
     @apply cursor-pointer text-gray-100
 }
 
-@media(max-width: 850px){
-    .reviews{
-        @apply flex flex-col
-    }
 
-    .review-stars{
-        @apply text-center mb-4 mt-0
-    }
-
-    .review-right-col{
-        @apply m-0
-    }
-}
 
 /* Footer */
 
@@ -434,6 +317,7 @@ input{
 }
 
 /* Media */
+
 @media(min-width:1000px){
     .pic-info-container{
         @apply flex gap-5
@@ -448,10 +332,112 @@ input{
     }
 }
 
+@media(min-width: 850px) {
+    .current-img{
+        @apply h-[80%]
+    }    
+}
+
+@media(min-width:1480px){
+    .first-pitch-container{
+        @apply max-w-[50%]
+    }
+}
+
+@media(max-width: 850px){
+    .reviews{
+        @apply flex flex-col
+    }
+
+    .review-stars{
+        @apply text-center mb-4 mt-0
+    }
+
+    .review-right-col{
+        @apply m-0
+    }
+
+    .first-pitch-container{
+        @apply flex flex-col w-[100%] max-w-[100%] px-3
+    }
+
+    .pitch-container{
+        @apply mx-auto w-[100%]
+    }
+
+    .phone,
+    .email,
+    .hours{
+        @apply mt-5 
+    }
+
+    .hours{
+        @apply mb-[-1.1rem]
+    }
+}
 
 
+@media (max-width: 770px) {
+    .header-navbar {
+      @apply hidden
+    }
 
+    .header-nav-logo{
+        @apply hidden
+    }
 
+    .show{
+        @apply flex flex-col justify-center items-center fixed z-50 bg-[#050505] w-[50%] h-screen bg-opacity-95
+    }
 
+    .show li{
+        @apply mb-5 text-3xl text-gray-400
+    }
 
+    .show li:hover{
+        @apply text-gray-200 cursor-pointer
+    }
+
+    .small-logo-container{
+        @apply flex justify-center bg-gray-950 items-center py-4 
+    }
+
+    .logo-small-screen{
+        @apply flex flex-col cursor-pointer text-gray-100 font-bold text-sm;
+      }
+  
+    .header-nav-toggle span {
+      @apply rounded-sm bg-gray-100 w-7 mb-1.5 h-0.5 block mt-1 
+    }
+
+    .header-nav-toggle {
+        @apply absolute top-[0.9rem] left-5 cursor-pointer bg-gray-950 p-2
+    }
+  
+    .header-nav-toggle.show + .header-navbar {
+      @apply block
+    }
+
+    .header-nav-logo{
+        @apply block 
+    }
+
+    .close-nav {
+        @apply text-gray-400 fixed top-5 left-7 text-3xl cursor-pointer z-50
+      }
+
+    .nav-fixed{
+    @apply bg-transparent w-0 h-0 py-0
+    }
+}
+
+@media(max-width: 420px){
+    .names-container{
+        @apply flex-col flex
+    }
+
+    .form-container{
+        @apply h-[1190px]
+    }
+}
 
