@@ -418,7 +418,7 @@ input{
     }
 
     .header-nav-toggle {
-        @apply absolute top-[1.3rem] left-5 cursor-pointer bg-gray-950 p-2
+        @apply absolute top-[1rem] left-3 cursor-pointer bg-gray-950 p-2
     }
 
     .header-nav-container{
@@ -456,5 +456,9 @@ input{
     .form-container{
         @apply h-[1190px]
     }
+
+    .header-nav-toggle span {
+        @apply rounded-sm bg-gray-400 w-6 mb-1.5  block 
+      }
 }
 
