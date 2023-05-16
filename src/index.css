@@ -80,11 +80,11 @@ li{
     }
 
     .small-logo-container{
-        @apply flex justify-center bg-gray-950 items-center py-7 
+        @apply flex justify-center bg-gray-950 items-center py-4 
     }
 
     .logo-small-screen{
-        @apply inline-block  cursor-pointer text-gray-100 font-bold text-sm;
+        @apply flex flex-col cursor-pointer text-gray-100 font-bold text-sm;
       }
   
     .header-nav-toggle span {
@@ -92,7 +92,7 @@ li{
     }
 
     .header-nav-toggle {
-        @apply absolute top-[1rem] left-5 cursor-pointer bg-gray-950 p-2
+        @apply absolute top-[0.9rem] left-5 cursor-pointer bg-gray-950 p-2
     }
   
     .header-nav-toggle.show + .header-navbar {
