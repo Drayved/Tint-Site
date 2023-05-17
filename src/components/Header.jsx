@@ -10,10 +10,14 @@ export default function Header() {
   const handleLogoClick = () => {
     window.location.reload();
     window.scrollTo(0, 0);
+    
+    window.innerWidth < 770 ?
+    setShowMenu(!showMenu) : ""
   };
 
   const handleMenuClick = () => {
-    setShowMenu(!showMenu);
+    window.innerWidth < 770 ?
+    setShowMenu(!showMenu) : ""
   };
 
   useEffect(() => {
@@ -44,7 +48,7 @@ export default function Header() {
     };
   }, []);
 
-  
+
 
 
   return (
@@ -64,20 +68,20 @@ export default function Header() {
             ""
           )}
           <li className={isSmallScreen ? "" : "hidden"}>
-            <a className="cur" onClick={handleLogoClick}>HOME</a>
+            <a className="cur" onClick={handleLogoClick }>HOME</a>
           </li>
           <li>
-            <a href="#services">SERVIES</a>
+            <a href="#services" onClick={handleMenuClick}>SERVICES</a>
           </li>
           <li>
-            <a href="#quote">QUOTE</a>
+            <a href="#quote" onClick={handleMenuClick}>QUOTE</a>
           </li>
           
           <li>
-            <a href="#contact">CONTACT</a>
+            <a href="#contact" onClick={handleMenuClick}>CONTACT</a>
           </li>
           <li>
-            <a href="#reviews">REVIEWS</a>
+            <a href="#reviews" onClick={handleMenuClick}>REVIEWS</a>
           </li>
         </ul>
         {!showMenu ? (
