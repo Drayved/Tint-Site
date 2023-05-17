@@ -48,6 +48,7 @@ export default function SlideShow({images}) {
       className="slideshow-container"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
+      onTouchEnd={() => setTouchStartX(null)} 
     >
       <div className="slideshow">
         <img
