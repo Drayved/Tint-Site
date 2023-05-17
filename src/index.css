@@ -10,6 +10,12 @@ body{
     @apply bg-hero bg-cover h-[800px] bg-center
 }
 
+@media(min-width: 1650px){
+    .header-container{
+       @apply h-[1080px]
+    }
+}
+
 .header-navbar{
     @apply flex gap-16 justify-center text-white font-bold drop-shadow-md pt-16 bg-gray-950
 }
