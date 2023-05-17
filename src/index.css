@@ -7,7 +7,7 @@ body{
 }
 
 .header-container{
-    @apply bg-peach-header bg-cover h-[800px] bg-center
+    @apply bg-hero bg-cover h-[800px] bg-center
 }
 
 .header-navbar{
@@ -29,7 +29,7 @@ li{
 }
 
 .header-titles{
-    @apply text-white flex flex-col text-center mt-52 drop-shadow-md gap-5
+    @apply text-white flex flex-col text-center mt-72 drop-shadow-md gap-5
 }
 
 .header-title{
@@ -90,7 +90,7 @@ li{
 }
 
 .vehicle-img{
-    @apply bg-truck-img h-64 bg-center bg-cover my-16
+    @apply bg-banner h-64 bg-center bg-cover my-16 
 }
 
 /* Map */
@@ -144,7 +144,7 @@ ol{
 }
 
 .slideshow-container{
-    @apply flex items-center justify-center mt-20 bg-blue-500 mb-0
+    @apply flex items-center justify-center mt-20 bg-blue-500 mb-0 
 }
 
 .slideshow{
@@ -152,7 +152,7 @@ ol{
 }
 
 .current-img{
-    @apply w-full h-[100%] object-cover 
+    @apply w-full h-[600px] object-cover 
 }
 
 .img-film{
@@ -369,7 +369,17 @@ input{
 
 @media(min-width: 850px) {
     .current-img{
-        @apply h-[80%]
+        @apply h-[800px]
+    }    
+
+    .vehicle-img{
+        @apply bg-banner1 h-[400px]
+    }
+}
+
+@media(min-width: 1200px) {
+    .current-img{
+        @apply h-[1000px] 
     }    
 }
 
@@ -393,6 +403,10 @@ input{
     .map-tint{
         @apply w-[27rem] h-[27rem]
     }
+
+    .current-img{
+        @apply h-[1350px] bg-center bg-cover
+    }    
 }
 
 @media(max-width: 850px){

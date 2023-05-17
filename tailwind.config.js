@@ -5,9 +5,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         'orang-lambo': "url('/images/header-img.jpg')",
-        'truck-img': "url('/images/truck.jpg')",
+        'banner': "url('/images/banner.jpg')",
+        'banner1': "url('/images/banner(1).jpg')",
         'garage': "url('/images/garage.jpg')",
-        'peach-header': "url('/images/peach-header.jpg')"
+        'peach-header': "url('/images/peach-header.jpg')",
+        'hero': "url('/images/hero.jpg')"
       },
     },
   },
