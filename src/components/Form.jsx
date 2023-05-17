@@ -45,6 +45,14 @@ export default function Form(){
           console.error(error)
         }
       };
+
+      const handlePhoneKeyDown = (e, index) => {
+        if (e.key === "Backspace" && phone[index] === "") {
+          if (inputRefs[index - 1]) {
+            inputRefs[index - 1].current.focus();
+          }
+        }
+      };
       
 
     
@@ -123,6 +131,7 @@ export default function Form(){
                                 value={phone[0]}
                                 onChange={(e) => handlePhoneChange(e, 0)}
                                 ref={inputRefs[0]}
+                                onKeyDown={(e) => handlePhoneKeyDown(e, 0)}
                             />
                         <p>(###)</p>
                         </div>
@@ -134,6 +143,7 @@ export default function Form(){
                                 value={phone[1]}
                                 onChange={(e) => handlePhoneChange(e, 1)}
                                 ref={inputRefs[1]}
+                                onKeyDown={(e) => handlePhoneKeyDown(e, 1)}
                             />
                         <p>###</p>
                         </div>
@@ -145,6 +155,7 @@ export default function Form(){
                                 value={phone[2]}
                                 onChange={(e) => handlePhoneChange(e, 2)}
                                 ref={inputRefs[2]}
+                                onKeyDown={(e) => handlePhoneKeyDown(e, 2)}
                             />
                         <p>####</p>
                         </div>
