@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-export default function SlideShow({images}) {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [touchStartX, setTouchStartX] = useState(null)
+export default function SlideShow({ images }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStartX, setTouchStartX] = useState(null);
+  const [swipeDirection, setSwipeDirection] = useState('');
 
   const previousImage = () => {
     const index = (currentIndex - 1 + images.length) % images.length;
@@ -16,6 +17,7 @@ export default function SlideShow({images}) {
 
   const handleTouchStart = (e) => {
     setTouchStartX(e.touches[0].clientX);
+    setSwipeDirection('');
   };
 
   const handleTouchMove = (e) => {
@@ -25,9 +27,11 @@ export default function SlideShow({images}) {
       const threshold = 50;
 
       if (diffX > threshold) {
-        nextImage();
+        setSwipeDirection('left');
       } else if (diffX < -threshold) {
-        previousImage();
+        setSwipeDirection('right');
+      } else {
+        setSwipeDirection('');
       }
 
       setTouchStartX(null);
@@ -42,17 +46,20 @@ export default function SlideShow({images}) {
     return () => clearInterval(interval);
   }, [currentIndex]);
 
-  
-
   return (
-    <div 
+    <div
       className="slideshow-container"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={() => {
-        touchStartX.current = null;
+        setTouchStartX(null);
       }}
     >
+      {swipeDirection && (
+        <div className="swipe-indicator">
+          Swipe {swipeDirection === 'left' ? 'left' : 'right'}
+        </div>
+      )}
       <div className="slideshow">
         <img
           src={images[currentIndex]}
@@ -63,26 +70,20 @@ export default function SlideShow({images}) {
           {images.map((image, index) => (
             <div
               key={index}
-              className={currentIndex === index ? "bubble active" : "bubble"}
+              className={currentIndex === index ? 'bubble active' : 'bubble'}
               onClick={() => setCurrentIndex(index)}
             ></div>
           ))}
         </div>
         <div className="arrow-container">
-          <button
-            onClick={previousImage}
-            className="arrows"
-          >
+          <button onClick={previousImage} className="arrows">
             &#8249;
           </button>
-          <button
-            onClick={nextImage}
-            className="arrows"
-          >
+          <button onClick={nextImage} className="arrows">
             &#8250;
           </button>
         </div>
       </div>
     </div>
   );
-};
+}
