@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    @apply bg-gray-100 font-serif leading-loose text-gray-500 w-[100%]
+    @apply bg-[#fff] font-serif leading-loose text-gray-500 w-[100%]
 }
 
 .header-container{
