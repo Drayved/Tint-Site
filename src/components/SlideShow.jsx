@@ -13,6 +13,26 @@ export default function SlideShow({images}) {
     setCurrentIndex(index);
   };
 
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    if (touchStartX !== null) {
+      const touchCurrentX = e.touches[0].clientX;
+      const diffX = touchStartX - touchCurrentX;
+      const threshold = 50;
+
+      if (diffX > threshold) {
+        nextImage();
+      } else if (diffX < -threshold) {
+        previousImage();
+      }
+
+      setTouchStartX(null);
+    }
+  };
+
   // Automatically switch to the next image every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,8 +41,14 @@ export default function SlideShow({images}) {
     return () => clearInterval(interval);
   }, [currentIndex]);
 
+  
+
   return (
-    <div className="slideshow-container">
+    <div 
+      className="slideshow-container"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+    >
       <div className="slideshow">
         <img
           src={images[currentIndex]}
