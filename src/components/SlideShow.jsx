@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 export default function SlideShow({images}) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [touchStartX, setTouchStartX] = useState(null)
 
   const previousImage = () => {
     const index = (currentIndex - 1 + images.length) % images.length;
