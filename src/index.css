@@ -359,7 +359,7 @@ input{
 
 /* Media */
 
-@media(min-width:1000px){
+@media(min-width:1200px){
     .pic-info-container{
         @apply flex gap-5
     }
