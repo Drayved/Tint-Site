@@ -537,5 +537,9 @@ input{
     .info-images{
         @apply h-[30rem] w-[90%];
     }
+
+    .reviews-title{
+        @apply text-2xl font-semibold 
+    }
 }
 
