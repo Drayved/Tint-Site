@@ -134,7 +134,7 @@ li{
 }
 
 .pic-info-container{
-    @apply w-[90%] mt-10 mx-auto ;
+    @apply w-[90%] mt-10 mx-auto h-[25%];
     
 }
 
@@ -530,6 +530,10 @@ input{
 
     .details-input{
         @apply text-sm
+    }
+
+    .info-images{
+        @apply h-96 w-96;
     }
 }
 
