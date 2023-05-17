@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    @apply bg-gray-300 font-serif leading-loose text-gray-500 w-[100%]
+    @apply bg-gray-100 font-serif leading-loose text-gray-500 w-[100%]
 }
 
 .header-container{
@@ -502,6 +502,14 @@ input{
     .header-nav-toggle:hover span{
         @apply bg-gray-100;
         text-shadow: 0px 0px 3px rgb(182, 173, 163);
+    }
+
+    #reviews{
+        @apply bg-gray-200 py-10
+    }
+
+    .footer-container{
+        @apply mt-0
     }
 }
 

@@ -16,16 +16,16 @@ export default function FirstPitch(){
             </div>
             <div className="company-info">
                 <div className="phone">
-                    <h2 className="text-lg mb-3">PHONE</h2>
-                    <p className="text-md">(859) 414-3453</p>
+                    <h2 className="text-lg mb-3 font-bold">PHONE</h2>
+                    <p className="text-md italic">(859) 414-3453</p>
                 </div>
                 <div className="email">
-                    <h2 className="text-lg mb-3">EMAIL</h2>
-                    <p className="text-md">florence@sunstoppers.com </p>
+                    <h2 className="text-lg mb-3 font-bold">EMAIL</h2>
+                    <p className="text-md italic">florence@sunstoppers.com </p>
                 </div>
                 <div className="hours">
-                    <h2 className="text-lg mb-3">HOURS</h2>
-                    <p className="text-md w-36">Monday-Saturday 8am-5pm</p>
+                    <h2 className="text-lg mb-3 font-bold">HOURS</h2>
+                    <p className="text-md w-36 italic">Monday-Saturday 8am-5pm</p>
                 </div>
             </div>
             
