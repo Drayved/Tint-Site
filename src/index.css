@@ -134,21 +134,21 @@ li{
 }
 
 .pic-info-container{
-    @apply w-[90%] mt-10 mx-auto h-[25%];
+    @apply w-[100%] mt-10 mx-auto h-[25%];
     
 }
 
 .info-images{
-    @apply h-[25%];
+    @apply h-[25%] w-[90%] mx-auto;
     object-fit:contain;
 }
 
 .list-title{
-    @apply font-semibold mt-8 text-gray-700
+    @apply font-semibold mt-8 text-gray-700 ml-7
 }
 
 ol{
-    @apply list-disc ml-10 mt-3 mb-8
+    @apply list-disc ml-[3.7rem] mt-3 mb-8 
 }
 
 .slideshow-container{
@@ -533,7 +533,7 @@ input{
     }
 
     .info-images{
-        @apply h-96 w-96;
+        @apply h-[30rem] w-[90%];
     }
 }
 
