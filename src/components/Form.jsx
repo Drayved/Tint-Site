@@ -4,7 +4,9 @@ export default function Form(){
     const [selectedService, setSelectedService] = useState('')
     const [phone, setPhone] = useState(["", "", ""])
     const [phoneNumber, setPhoneNumber] = useState("")
+    const [formSubmitted, setFormSubmitted] = useState(false)
     const inputRefs = [useRef(), useRef(), useRef()]
+    
 
     const handleSelect = (e) => {
         setSelectedService(e.target.value)
@@ -29,10 +31,11 @@ export default function Form(){
     
       const handleSubmit = async (e) => {
         e.preventDefault()
-        alert("Form submitted. Someone will reach out to you with a quote. Thank you!")
+
         const url = "https://script.google.com/macros/s/AKfycbwxLKGbIiJr_-hw-qFxbtCl-njt5Pu8hrioTixHbmR3VWSCenjw2K3tsFZL66FSE7zn/exec"
         const data = new FormData(e.target)
-        
+        setFormSubmitted(true)
+
         try {
           const response = await fetch(url, { method: "POST", body: data })
           const json = await response.json()
@@ -166,7 +169,7 @@ export default function Form(){
                         required
                         />
                     </label>
-                    <button className="form-btn">Get Quote</button>
+                    {formSubmitted ? <p>Thank you! a representative will reach out to you shortly!</p> : <button className="form-btn">Get Quote</button>}
                 </form>
             </div>
 
