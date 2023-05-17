@@ -1,40 +1,45 @@
-import React, {useState, useEffect} from "react"
+import React, {useState, useRef} from "react"
 
 export default function Form(){
     const [selectedService, setSelectedService] = useState('')
-    const [phone, setPhone] = useState(["", "", ""]);
+    const [phone, setPhone] = useState(["", "", ""])
     const [phoneNumber, setPhoneNumber] = useState("")
+    const inputRefs = [useRef(), useRef(), useRef()]
 
     const handleSelect = (e) => {
         setSelectedService(e.target.value)
     }
 
     const handlePhoneChange = (e, index) => {
-        const value = e.target.value.replace(/\D/g, "");
+        const value = e.target.value.replace(/\D/g, "")
         setPhone((prevPhone) => {
-          const newPhone = [...prevPhone];
-          newPhone[index] = value.slice(0, index === 2 ? 4 : 3); // Limit the current input to 4 or 3 characters
+          const newPhone = [...prevPhone]
+          newPhone[index] = value.slice(0, index === 2 ? 4 : 3) // Limit the current input to 4 or 3 characters
 
-          setPhoneNumber(`(${newPhone[0]}) ${newPhone[1]}-${newPhone[2]}`);
-          return newPhone;
+          setPhoneNumber(`(${newPhone[0]}) ${newPhone[1]}-${newPhone[2]}`)
+          return newPhone
         });
+
+        if (value.length >= e.target.maxLength && inputRefs[index + 1]) {
+            inputRefs[index + 1].current.focus()
+          }
       };
       
       
     
       const handleSubmit = async (e) => {
-        e.preventDefault();
+        e.preventDefault()
         alert("Form submitted. Someone will reach out to you with a quote. Thank you!")
-        const url = "https://script.google.com/macros/s/AKfycbwxLKGbIiJr_-hw-qFxbtCl-njt5Pu8hrioTixHbmR3VWSCenjw2K3tsFZL66FSE7zn/exec";
-        const data = new FormData(e.target);
+        const url = "https://script.google.com/macros/s/AKfycbwxLKGbIiJr_-hw-qFxbtCl-njt5Pu8hrioTixHbmR3VWSCenjw2K3tsFZL66FSE7zn/exec"
+        const data = new FormData(e.target)
         
         try {
-          const response = await fetch(url, { method: "POST", body: data });
-          const json = await response.json();
+          const response = await fetch(url, { method: "POST", body: data })
+          const json = await response.json()
           
-          console.log(json);
+          console.log(json)
         } catch (error) {
-          console.error(error);
+          console.error(error)
         }
       };
       
@@ -114,6 +119,7 @@ export default function Form(){
                                 maxLength={3}
                                 value={phone[0]}
                                 onChange={(e) => handlePhoneChange(e, 0)}
+                                ref={inputRefs[0]}
                             />
                         <p>(###)</p>
                         </div>
@@ -124,6 +130,7 @@ export default function Form(){
                                 maxLength={3}
                                 value={phone[1]}
                                 onChange={(e) => handlePhoneChange(e, 1)}
+                                ref={inputRefs[1]}
                             />
                         <p>###</p>
                         </div>
@@ -134,6 +141,7 @@ export default function Form(){
                                 maxLength={4}
                                 value={phone[2]}
                                 onChange={(e) => handlePhoneChange(e, 2)}
+                                ref={inputRefs[2]}
                             />
                         <p>####</p>
                         </div>
