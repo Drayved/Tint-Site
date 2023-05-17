@@ -134,7 +134,8 @@ li{
 }
 
 .pic-info-container{
-    @apply w-[90%] mt-10 mx-auto 
+    @apply w-[90%] mt-10 mx-auto ;
+    object-fit:contain;
 }
 
 .info-images{
@@ -359,7 +360,7 @@ input{
 
 /* Media */
 
-@media(min-width:1200px){
+@media(min-width:1000px){
     .pic-info-container{
         @apply flex gap-5
     }
