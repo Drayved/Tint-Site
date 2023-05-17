@@ -112,7 +112,7 @@ li{
 
 .map-tint{
 
-    @apply absolute w-[90%] h-[450px] bg-black opacity-10
+    @apply absolute w-[90%] h-[450px] bg-black opacity-10 pointer-events-none
 
 
 }
