@@ -107,20 +107,14 @@ li{
 
 .map-container{
     @apply mt-16 flex justify-center;
-    
-    
 }
 
 .map{
-    @apply w-[90%] h-[450px];
-    
+    @apply w-[90%] h-[450px] max-w-[600px];
 }
 
 .map-tint{
-
-    @apply absolute w-[90%] h-[450px] bg-black opacity-10 pointer-events-none
-
-
+    @apply absolute w-[90%] h-[450px] bg-black opacity-10 pointer-events-none max-w-[600px]
 }
 
 /* Second pitch */
