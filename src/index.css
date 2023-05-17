@@ -135,11 +135,12 @@ li{
 
 .pic-info-container{
     @apply w-[90%] mt-10 mx-auto ;
-    object-fit:contain;
+    
 }
 
 .info-images{
-    @apply h-[25%]
+    @apply h-[25%];
+    object-fit:contain;
 }
 
 .list-title{
