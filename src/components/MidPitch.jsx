@@ -5,8 +5,8 @@ export default function MidPitch(){
     return(
         <div id="contact" className="mid-page-info">
             <div className="mid-titles">
-                <h1 className="mid-phone">(555) 555-5555</h1>
-                <h3 className="mid-email">INFO@COMPANYNAME.COM</h3>
+                <h1 className="mid-phone">(859) 414-3453</h1>
+                <h3 className="mid-email">florence@sunstoppers.com</h3>
             </div>
             <p className="mid-text">
                 Long before Mile High, our staff was employed by a vast variety of corporate dealerships.

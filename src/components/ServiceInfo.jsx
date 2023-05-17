@@ -7,11 +7,11 @@ export default function ServiceInfo(){
             <div className="vehicle-img"></div>
             <div className="services">
                 <div className="second-pitch-container">
-                    <h2 className="second-pitch">At (Company name) we offer a variety of window tinting and clear bra applications.
+                    <h2 className="second-pitch">At Peach & Cake we offer a variety of window tinting and clear bra applications.
                         Whether you need automotive, commercial, or residential work, our expert installers will 
                         make sure the job gets done right the first time.
                     </h2>
-                    <p className="second-pitch-details">Our customer and their investments are extremely important to us. We look forwar to working with you!</p>
+                    <p className="second-pitch-details">Our customer and their investments are extremely important to us. We look forward to working with you!</p>
                 </div>
                 <div className="pic-info-container">
                     <div>

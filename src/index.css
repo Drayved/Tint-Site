@@ -93,6 +93,30 @@ li{
     @apply bg-truck-img h-64 bg-center bg-cover my-16
 }
 
+/* Map */
+
+.pitch-map-container{
+    @apply flex flex-col
+}
+
+.map-container{
+    @apply mt-16 flex justify-center;
+    
+    
+}
+
+.map{
+    @apply w-[90%] h-[450px];
+    
+}
+
+.map-tint{
+
+    @apply absolute w-[90%] h-[450px] bg-black opacity-10
+
+
+}
+
 /* Second pitch */
 
 .second-pitch-container{
@@ -108,7 +132,7 @@ li{
 }
 
 .info-images{
-    @apply h-[25%]
+    @apply h-[400px] w-[100%]
 }
 
 .list-title{
@@ -230,7 +254,7 @@ input{
 /* MIDDLE INFO */
 
 .mid-page-info{
-    @apply mx-auto w-[70%] my-20 
+    @apply mx-auto w-[80%] my-20 
 }
 
 @media(min-width:1500px ){
@@ -254,7 +278,7 @@ input{
 /* Reviews */
 
 .reviews-container {
-    @apply  w-[80%] mx-auto max-w-[1000px] pb-4
+    @apply  w-[90%] mx-auto max-w-[1000px] pb-4
     
 }
 
@@ -263,7 +287,7 @@ input{
   }
   
 .reviews-title{
-    @apply text-3xl text-center flex justify-center px-16 text-gray-700
+    @apply text-3xl text-center flex justify-center px-10 text-gray-700
 }
 
 .reviews{
@@ -349,9 +373,25 @@ input{
     }    
 }
 
-@media(min-width:1480px){
+@media(min-width:1400px){
     .first-pitch-container{
         @apply max-w-[50%]
+    }
+
+    .pitch-map-container{
+        @apply flex-row
+    }
+
+    .map-container{
+        @apply mt-16 mr-24 
+    }
+
+    .map{
+        @apply w-[27rem] h-[27rem]
+    }
+
+    .map-tint{
+        @apply w-[27rem] h-[27rem]
     }
 }
 

@@ -7,6 +7,7 @@ import MidPitch from "./components/MidPitch";
 import ServiceInfo from "./components/ServiceInfo";
 import FirstPitch from "./components/FirstPitch";
 import Reviews from "./components/Reviews";
+import Map from "./components/Map";
 
 const images = [
     '/images/urus.jpg',
@@ -19,7 +20,10 @@ export default function App() {
     return (
         <div>
             <Header />
-            <FirstPitch />
+            <div className="pitch-map-container">
+                <FirstPitch />
+                <Map />
+            </div>
             <ServiceInfo />
             <SlideShow images={images}/>
             <Form />
