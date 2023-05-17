@@ -471,11 +471,11 @@ input{
       }
   
     .header-nav-toggle span {
-      @apply rounded-sm bg-gray-400 w-7 mb-1.5 h-0.5 block mt-1 
+      @apply rounded-sm bg-gray-300 w-7 mb-1.5 h-0.5 block mt-1 
     }
 
     .header-nav-toggle {
-        @apply absolute top-[1.3rem] left-4 cursor-pointer bg-gray-950 p-1.5
+        @apply absolute top-[1.3rem] left-4 cursor-pointer bg-gray-950 p-1.5 rounded-md
     }
 
     .header-nav-container{
@@ -491,7 +491,7 @@ input{
     }
 
     .close-nav {
-        @apply text-gray-400 fixed top-7 left-8 text-3xl cursor-pointer z-50
+        @apply text-gray-400 fixed top-6 left-5 text-3xl cursor-pointer z-50
       }
 
 
@@ -500,7 +500,7 @@ input{
     }
 
     .header-nav-toggle:hover span{
-        @apply bg-gray-100;
+        @apply bg-[#fff];
         text-shadow: 0px 0px 3px rgb(182, 173, 163);
     }
 
