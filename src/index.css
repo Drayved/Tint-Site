@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body{
-    @apply bg-[#fff] font-serif leading-loose text-gray-500 w-[100%]
+    @apply bg-[#fff] leading-loose text-gray-500 w-[100%];
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header-container{
@@ -78,11 +79,11 @@ li{
 }
 
 .pitch{
-    @apply text-2xl font-semibold  mx-auto mb-5 text-gray-700 leading-relaxed
+    @apply text-2xl font-bold  mx-auto mb-5 text-gray-700 leading-relaxed
 }
 
 .pitch-details{
-    @apply  mx-auto leading-loose
+    @apply  mx-auto leading-loose text-gray-400 font-semibold text-base
 }
 
 .company-info{
@@ -124,7 +125,11 @@ li{
 }
 
 .second-pitch{
-    @apply text-2xl font-semibold mb-4 text-gray-700 leading-relaxed
+    @apply text-2xl font-bold mb-4 text-gray-700 leading-relaxed
+}
+
+.second-pitch-details{
+    @apply text-gray-500 font-semibold
 }
 
 .pic-info-container{
@@ -138,11 +143,11 @@ li{
 }
 
 .list-title{
-    @apply font-semibold mt-8 text-gray-700 ml-16
+    @apply font-semibold mt-8 text-gray-700 ml-[5%]
 }
 
 .service-list{
-    @apply list-disc ml-[6rem] mt-3 mb-8 
+    @apply list-disc ml-[10%] mt-3 mb-8 
 }
 
 .slideshow-container{
@@ -180,11 +185,11 @@ li{
 /* FORM */
 
 .form-container{
-    @apply bg-garage bg-cover text-white h-[1080px] flex flex-col items-center 
+    @apply bg-garage bg-cover text-white h-[1070px] flex flex-col items-center 
 }
 
 .form-titles{
-    @apply text-center mb-20 mt-32
+    @apply text-center mb-20 mt-28
 }
 
 .form-question{
@@ -246,7 +251,11 @@ input{
 }
 
 .form-btn{
-    @apply rounded-3xl w-32 p-2 bg-gray-100 text-gray-500
+    @apply rounded-3xl w-40 p-1 bg-gray-100 text-gray-500 
+}
+
+.form-btn:hover{
+    @apply bg-gray-300
 }
 
 .form-info{
@@ -256,12 +265,12 @@ input{
 /* MIDDLE INFO */
 
 .mid-page-info{
-    @apply mx-auto w-[80%] my-20 
+    @apply mx-auto w-[80%] my-20 text-center
 }
 
 @media(min-width:1500px ){
     .mid-page-info{
-        @apply w-[45%]
+        @apply w-[50%] 
     }
 }
 
@@ -289,7 +298,7 @@ input{
   }
   
 .reviews-title{
-    @apply text-3xl text-center flex justify-center px-10 text-gray-700
+    @apply text-2xl text-center flex justify-center px-10 text-gray-700 font-semibold
 }
 
 .reviews{
@@ -305,7 +314,7 @@ input{
 }
 
 .review-stars{
-    @apply mt-3
+    @apply mt-3 italic
 }
 
 .review-desc{
@@ -326,7 +335,7 @@ input{
 
 .google-reviews:hover,
 .google-write:hover{
-    @apply cursor-pointer text-gray-100
+    @apply cursor-pointer text-gray-400
 }
 
 
@@ -347,6 +356,10 @@ input{
 
 .footer-btn{
     @apply text-gray-100 pb-4
+}
+
+.footer-btn:hover{
+    @apply text-gray-400
 }
 
 .footer-email{
@@ -387,6 +400,13 @@ input{
         @apply h-[60%] w-[100%] mr-16
     }
 
+    .list-title{
+        @apply ml-[9%]
+    }
+    
+    .service-list{
+        @apply list-disc ml-[15%] mt-3 mb-8 
+    }
 }
 
 @media(min-width:1400px){
@@ -415,19 +435,7 @@ input{
     }    
 }
 
-@media(max-width: 850px){
-    .reviews{
-        @apply flex flex-col
-    }
-
-    .review-stars{
-        @apply text-center mb-4 mt-0
-    }
-
-    .review-right-col{
-        @apply m-0
-    }
-
+@media(max-width: 950px){
     .first-pitch-container{
         @apply flex flex-col w-[100%] max-w-[100%] px-3
     }
@@ -445,6 +453,22 @@ input{
     .hours{
         @apply mb-[-1.1rem]
     }
+}
+
+@media(max-width: 850px){
+    .reviews{
+        @apply flex flex-col
+    }
+
+    .review-stars{
+        @apply text-center mb-4 mt-0
+    }
+
+    .review-right-col{
+        @apply m-0
+    }
+
+
 }
 
 
@@ -539,7 +563,7 @@ input{
     }
 
     .info-images{
-        @apply h-[30rem] w-[90%];
+        @apply min-h-[20%] w-[90%];
     }
 
     .reviews-title{
