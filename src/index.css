@@ -566,7 +566,13 @@ input{
     .bubble{
         @apply relative bottom-3
     }
+
+    .map,
+    .map-tint{
+        @apply h-[400px]
+    }
 }
+
 
 @media(max-width: 420px){
     .names-container{
