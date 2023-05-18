@@ -17,7 +17,7 @@ export default function ServiceInfo(){
                     <div>
                         <img className="info-images" src="/images/garage-pic.jpg" alt="Blue Skyline" />
                         <h3 className="list-title">WINDOW TINT</h3>
-                        <ol>
+                        <ol className="service-list">
                             <li>Blocks 97% of harmful UV rays</li>
                             <li>Reduces air conditioning costs</li>
                             <li>Reduces glare and eye discomfort</li>
@@ -27,7 +27,7 @@ export default function ServiceInfo(){
                     <div>
                         <img className="info-images" src="/images/second-pic(2).jpg" alt="White BMW" />
                         <h3 className="list-title">CLEAR BRA</h3>
-                        <ol>
+                        <ol className="service-list">
                             <li>High grade clear polyurethane</li>
                             <li>Applied to high impact areas</li>
                             <li>Prevents damage from road debris</li>
@@ -37,7 +37,7 @@ export default function ServiceInfo(){
                     <div>
                         <img className="info-images" src="/images/third-pic(2).jpg" alt="Broken Glass" />
                         <h3 className="list-title">SECURITY FILM</h3>
-                        <ol>
+                        <ol className="service-list">
                             <li>Perfect for your home or business</li>
                             <li>Protects against natural disasters</li>
                             <li>Holds glass in place</li>
