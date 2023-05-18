@@ -308,6 +308,10 @@ input{
     @apply font-bold
 }
 
+.mid-text{
+    @apply text-left
+}
+
 /* Reviews */
 
 .reviews-container {
