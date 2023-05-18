@@ -361,7 +361,7 @@ input{
 }
 
 .footer-btn{
-    @apply text-gray-100 pb-4
+    @apply text-gray-100 mb-4
 }
 
 .footer-btn:hover{
