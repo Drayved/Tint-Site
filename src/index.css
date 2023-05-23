@@ -71,7 +71,7 @@ li{
 }
 
 .pitch{
-    @apply text-2xl font-bold  mx-auto mb-5 text-gray-700 leading-relaxed
+    @apply text-2xl font-semibold  mx-auto mb-5 text-gray-700 leading-relaxed
 }
 
 .pitch-details{
@@ -118,11 +118,11 @@ li{
 }
 
 .second-pitch{
-    @apply text-2xl font-bold mb-4 text-gray-700 leading-relaxed
+    @apply text-2xl font-semibold mb-4 text-gray-700 leading-relaxed
 }
 
 .second-pitch-details{
-    @apply text-gray-500 font-semibold
+    @apply text-gray-400 font-bold
 }
 
 .pic-info-container{
@@ -411,7 +411,7 @@ input{
     }
 
     .info-images{
-        @apply h-[70%] w-[100%] 
+        @apply h-[70%] w-[100%]
     }
     
     .service-list{
@@ -436,12 +436,9 @@ input{
         @apply mt-16 mr-32 
     }
 
-    .map{
-        @apply w-[27rem] h-[27rem] ml-32
-    }
-
+    .map,
     .map-tint{
-        @apply w-[27rem] h-[27rem] ml-32
+        @apply w-[27rem] h-[27rem]
     }
 
     .current-img{
@@ -453,6 +450,12 @@ input{
     .header-container{
        @apply h-[1080px]
     }
+
+    .map,
+    .map-tint{
+        @apply ml-32
+    }
+
 }
 
 @media(max-width: 950px){
