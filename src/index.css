@@ -403,7 +403,7 @@ input{
     }    
 
     .pic-info-container{
-        @apply flex  max-w-[1200px] gap-10
+        @apply flex  max-w-[1800px] gap-10 
     }
 
     .services{
@@ -415,7 +415,7 @@ input{
     }
     
     .service-list{
-        @apply list-disc 
+        @apply list-disc
     }
 
     .slideshow-container{
@@ -425,7 +425,7 @@ input{
 
 @media(min-width:1400px){
     .first-pitch-container{
-        @apply max-w-[50%]
+        @apply max-w-[55%]
     }
 
     .pitch-map-container{
@@ -433,15 +433,15 @@ input{
     }
 
     .map-container{
-        @apply mt-16 mr-24 
+        @apply mt-16 mr-32 
     }
 
     .map{
-        @apply w-[27rem] h-[27rem]
+        @apply w-[27rem] h-[27rem] ml-32
     }
 
     .map-tint{
-        @apply w-[27rem] h-[27rem]
+        @apply w-[27rem] h-[27rem] ml-32
     }
 
     .current-img{
