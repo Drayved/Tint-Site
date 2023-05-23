@@ -570,6 +570,10 @@ input{
     .map-tint{
         @apply h-[400px]
     }
+
+    .arrows{
+        @apply hidden
+    }
 }
 
 
