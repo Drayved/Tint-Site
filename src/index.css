@@ -11,12 +11,6 @@ body{
     @apply bg-hero bg-cover h-[800px] bg-center
 }
 
-@media(min-width: 1650px){
-    .header-container{
-       @apply h-[1080px]
-    }
-}
-
 .header-navbar{
     @apply flex gap-16 justify-center text-white font-bold drop-shadow-md pt-16 bg-gray-950
 }
@@ -56,8 +50,6 @@ li{
 .nav-fixed{
     @apply fixed w-screen top-0 left-0 right-0 z-50 mt-[-65px] py-1
     bg-[#171717] shadow-md;
-    
-    
 }
 
 .nav-fixed li{
@@ -115,7 +107,8 @@ li{
 }
 
 .map-tint{
-    @apply absolute w-[90%] h-[450px] bg-black opacity-10 pointer-events-none max-w-[600px]
+    @apply absolute w-[90%] h-[450px] bg-black opacity-10 pointer-events-none
+     max-w-[600px]
 }
 
 /* Second pitch */
@@ -165,22 +158,22 @@ li{
   }
   
   .current-img {
-    @apply w-full h-[600px] object-cover;
-    opacity: 1;
+    @apply w-full h-[600px] object-cover opacity-100;
+    
     transition: opacity 0.3s ease;
   }
   
   .current-img.transitioning {
-    opacity: 0.5;
+    @apply opacity-50;
   }
   
   .bubble {
-    opacity: 0.5;
+    @apply opacity-50;
     transition: opacity 0.3s ease;
   }
   
   .bubble.active {
-    opacity: 1;
+    @apply opacity-100
   }
   
   .img-film {
@@ -410,23 +403,23 @@ input{
     }    
 
     .pic-info-container{
-        @apply flex gap-5
+        @apply flex  max-w-[1200px] gap-10
     }
 
     .services{
-        @apply max-w-[1400px] mx-auto
+        @apply  mx-auto max-w-[1400px] 
     }
 
     .info-images{
-        @apply h-[60%] w-[100%] mr-16
-    }
-
-    .list-title{
-        @apply ml-[9%]
+        @apply h-[70%] w-[100%] 
     }
     
     .service-list{
-        @apply list-disc ml-[15%] mt-3 mb-8 
+        @apply list-disc 
+    }
+
+    .slideshow-container{
+        @apply mt-10
     }
 }
 
@@ -454,6 +447,12 @@ input{
     .current-img{
         @apply h-[1350px] bg-center bg-cover
     }    
+}
+
+@media(min-width: 1650px){
+    .header-container{
+       @apply h-[1080px]
+    }
 }
 
 @media(max-width: 950px){

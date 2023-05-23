@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function SlideShow({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [nextIndex, setNextIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const previousImage = () => {
     if (!isTransitioning) {
@@ -18,6 +20,23 @@ export default function SlideShow({ images }) {
       const index = (currentIndex + 1) % images.length;
       setNextIndex(index);
       setIsTransitioning(true);
+    }
+  };
+
+  const handleTouchStart = (event) => {
+    touchStartX.current = event.touches[0].clientX;
+  };
+
+  const handleTouchMove = (event) => {
+    touchEndX.current = event.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const touchDiff = touchStartX.current - touchEndX.current;
+    if (touchDiff > 50) {
+      nextImage();
+    } else if (touchDiff < -50) {
+      previousImage();
     }
   };
 
@@ -36,7 +55,12 @@ export default function SlideShow({ images }) {
   }, [currentIndex]);
 
   return (
-    <div className="slideshow-container">
+    <div
+      className="slideshow-container"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       <div className="slideshow">
         <img
           src={images[currentIndex]}
