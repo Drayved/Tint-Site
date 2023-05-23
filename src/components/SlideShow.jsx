@@ -44,7 +44,7 @@ export default function SlideShow({ images }) {
     const transitionTimeout = setTimeout(() => {
       setCurrentIndex(nextIndex);
       setIsTransitioning(false);
-    }, 200); // Adjust the transition duration here (in milliseconds)
+    }, 350); // Adjust the transition duration here (in milliseconds)
 
     return () => clearTimeout(transitionTimeout);
   }, [nextIndex]);

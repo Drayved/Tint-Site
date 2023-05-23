@@ -164,7 +164,7 @@ li{
   }
   
   .current-img.transitioning {
-    @apply opacity-50;
+    @apply opacity-10;
   }
   
   .bubble {
