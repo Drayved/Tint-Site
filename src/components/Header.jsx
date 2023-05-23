@@ -105,7 +105,7 @@ export default function Header() {
 
       <div className="header-titles">
         <h1 className="header-title">EXPERIENCE EXCELLENCE IN AUTO SERVICES </h1>
-        <h4 className="header-subtitle">Kentuckys premier tinting service</h4>
+        <h4 className="header-subtitle">Kentucky's premier tinting service</h4>
       </div>
     </div>
   );
