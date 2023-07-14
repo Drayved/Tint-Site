@@ -62,7 +62,7 @@ export default function Header() {
         <ul className={`header-navbar ${showMenu ? "show" : "hidden"}`}>
         {!isSmallScreen ? (
             <h3 className="header-nav-logo" onClick={handleLogoClick}>
-              PEACH & CAKE<span className="text-sm">Window Tinting & Auto Services</span>
+              YOUR COMPANY<span className="text-sm">Window Tinting & Auto Services</span>
             </h3>
           ) : (
             ""
@@ -99,7 +99,7 @@ export default function Header() {
 
       <div className="small-logo-container">
         <h3 className="logo-small-screen" onClick={handleLogoClick}>
-          PEACH & CAKE<span className="text-sm">Window Tinting & Auto Services</span>
+          YOUR COMPANY<span className="text-sm">Window Tinting & Auto Services</span>
         </h3>
       </div>
 

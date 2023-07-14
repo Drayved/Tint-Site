@@ -14,8 +14,8 @@ export default function Footer() {
           BACK TO TOP
         </button>
       </div>
-      <h4 className="footer-phone">(859) 414-3453 <span className="footer-email">florence@sunstoppers.com</span></h4>
-      <h4 className="footer-name">©2019 Peach & Cake</h4>
+      <h4 className="footer-phone">(555) 555-5555 <span className="footer-email">youremail@yourcompany.com</span></h4>
+      <h4 className="footer-name">©2019 Your Company</h4>
     </div>
   );
 }

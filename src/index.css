@@ -8,7 +8,7 @@ body{
 }
 
 .header-container{
-    @apply bg-hero bg-cover h-[800px] bg-center
+    @apply bg-orang-lambo bg-cover h-[800px] bg-center
 }
 
 .header-navbar{

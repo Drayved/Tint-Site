@@ -61,7 +61,7 @@ export default function Form(){
         <div className="form-container">
             <div id="quote"></div>
             <div  className="form-titles">
-                <h2 className="form-title">PEACH & CAKE</h2>
+                <h2 className="form-title">Company Name</h2>
                 <h4 className="form-subtitle">WINDOW TINT & AUTO SERVICES</h4>
             </div>
             <div className="form-info">

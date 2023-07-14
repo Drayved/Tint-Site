@@ -5,7 +5,7 @@ export default function FirstPitch(){
     return(
         <div className="first-pitch-container">
             <div className="pitch-container">
-                <h3 className="pitch">Welcome to Peach & Cake Window Tinting & Auto Services. We are professionals providing
+                <h3 className="pitch">Welcome to (your company) Window Tinting & Auto Services. We are professionals providing
                     quality installion of window tint, clear bra, and security film.
                 </h3>
                 <p className="pitch-details">We are located in Florence, KY and we've been providing customers and dealerships with
@@ -17,11 +17,11 @@ export default function FirstPitch(){
             <div className="company-info">
                 <div className="phone">
                     <h2 className="text-lg mb-3 font-bold">PHONE</h2>
-                    <p className="text-md italic">(859) 414-3453</p>
+                    <p className="text-md italic">(555) 555-5555</p>
                 </div>
                 <div className="email">
                     <h2 className="text-lg mb-3 font-bold">EMAIL</h2>
-                    <p className="text-md italic">florence@sunstoppers.com </p>
+                    <p className="text-md italic">youremail@yourcompany.com </p>
                 </div>
                 <div className="hours">
                     <h2 className="text-lg mb-3 font-bold">HOURS</h2>
