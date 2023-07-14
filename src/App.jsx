@@ -10,10 +10,10 @@ import Reviews from "./components/Reviews";
 import Map from "./components/Map";
 
 const images = [
-    '/images/first-pic.jpg',
-    '/images/second-pic.jpg',
-    '/images/third-pic.jpg',
-    '/images/fourth-pic.jpg'
+    '/images/blue-car.jpg',
+    '/images/green-car.jpg',
+    '/images/white-car.jpg',
+    '/images/gray-car.jpg'
   ];
 
 export default function App() {

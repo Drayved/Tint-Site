@@ -411,7 +411,7 @@ input{
     }
 
     .info-images{
-        @apply h-[70%] w-[100%]
+        @apply h-[300px] w-[100%]
     }
     
     .service-list{
