@@ -25,3 +25,7 @@ You can access the site [here](https://davids-tint-site.netlify.app).
 
 Feel free to explore the site and experience its features!
 
+## Screenshots
+
+![Screenshot 1](/screenshots/screenshot1.JPG)
+![Screenshot 2](/screenshots/screenshot2.JPG)
